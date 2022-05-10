@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>practicaDockWidgetBase</class>
+ <widget class="QDockWidget" name="practicaDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>517</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>practica</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>501</width>
+      <height>564</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="16" column="1">
+      <widget class="QgsFileWidget" name="qfw_guardar">
+       <property name="storageMode">
+        <enum>QgsFileWidget::GetDirectory</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_impres">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Ubicación de la impresión</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_agrup">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Nuevo código agrupado</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Ubicación de la impresión</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Ubicación capa de la muestra</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0" colspan="2">
+      <widget class="QPushButton" name="btn_MostrarAgrup">
+       <property name="text">
+        <string>Mostrar nuevo agrupamiento de manzanas</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Ubicación capa de manzanas:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>¿Desea rotar la muestra?</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Digite el código del segmento</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="lineAgrup">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QgsFileWidget" name="qfw_guardarPre">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="storageMode">
+        <enum>QgsFileWidget::GetDirectory</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QPushButton" name="btn_imprimir">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Imprimir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QgsFileWidget" name="qfw_seleccionarMz"/>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QgsFileWidget" name="qfw_seleccionarMuestra"/>
+     </item>
+     <item row="2" column="0" colspan="3">
+      <widget class="QPushButton" name="btn_adicionar">
+       <property name="text">
+        <string>Adicionar capas</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QLineEdit" name="ql_codigo"/>
+     </item>
+     <item row="4" column="0" colspan="3">
+      <widget class="QPushButton" name="btn_buscar">
+       <property name="text">
+        <string>Buscar segmento</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="3">
+      <widget class="QTableWidget" name="qtw_tabla">
+       <column>
+        <property name="text">
+         <string>SEGMENTO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CÓD MANZANA</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CÓD AGRUPADO</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="3">
+      <widget class="QPushButton" name="btn_Mostrar">
+       <property name="text">
+        <string>Mostrar segmento</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" colspan="2">
+      <widget class="QComboBox" name="cmb_seleccion">
+       <property name="toolTipDuration">
+        <number>-1</number>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>No e imprimir</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Si</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QPushButton" name="btn_buscAgrup">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Buscar código agrupado</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="3">
+      <widget class="QTableWidget" name="qtw_tabla2">
+       <column>
+        <property name="text">
+         <string>CÓD AGRUPADO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CÓD MANZANA</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="QPushButton" name="btn_confirmar">
+       <property name="text">
+        <string>Confirmar rotación</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="2">
+      <widget class="QPushButton" name="btn_guardar">
+       <property name="text">
+        <string>Imprimir rotación</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFileWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfilewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
